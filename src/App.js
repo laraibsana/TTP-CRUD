@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { getCampusData } from "./Actions/campusAction";
+import { getStudentData } from "./Actions/studentAction";
+import { getNoCampusStudentData } from "./Actions/nocampusaction";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import "./App.css";
+//Component
+import Nav from "./Component/Nav/nav.jsx";
+import Routes from "./Component/Routes/routes.jsx";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		dispatch(getCampusData());
+		dispatch(getStudentData());
+		dispatch(getNoCampusStudentData());
+	}, []);
+
+	return (
+		<div className="Container">
+			<div className="Container-Top">
+				<Nav />
+			</div>
+			<div className="Container-Middle">
+				<Routes />
+			</div>
+			<div className="Container-Bottom">
+				{/* <footer>Created By: </footer> */}
+			</div>
+		</div>
+	);
+};
 
 export default App;

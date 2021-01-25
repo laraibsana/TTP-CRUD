@@ -1,0 +1,53 @@
+.formContainer {
+	display: grid;
+	grid-template-columns: 500px auto 500px;
+	min-height: 860px;
+	background: #edf6f9;
+	background-color: #ffddd2;
+}
+
+.formContainerLeft {
+	grid-column-start: 1;
+}
+
+.formContainerMiddle {
+	grid-column-start: 2;
+	text-align: center;
+}
+
+.pop-up {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+}
+
+.formContainerRight {
+	grid-column-start: 3;
+}
+
+.campusnamelabel,
+.campusnameinput,
+.campuslocationlabel,
+.campuslocationinput,
+.campusurllabel,
+.campusnurlinput,
+.campusdescriptionlabel,
+.campusdescriptioninput,
+.campussumbit {
+	margin-top: 10px;
+}
+
+.campusnameinput input,
+.campuslocationinput input,
+.campusnurlinput input,
+.campusdescriptioninput input {
+	padding: 10px;
+	width: 350px;
+	border-radius: 5px;
+	outline-style: none;
+	border: none;
+}

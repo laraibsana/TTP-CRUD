@@ -1,0 +1,22 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.Home-container {
+	background-color: whitesmoke;
+}
+
+.Home-text {
+	position: relative;
+	left: 750px;
+	top: 350px;
+}
+
+.Home-search {
+	position: relative;
+	left: 910px;
+	top: 360px;
+	padding: 0.2rem;
+}

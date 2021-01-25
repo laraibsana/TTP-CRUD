@@ -1,0 +1,103 @@
+.campus-Container {
+	display: grid;
+	grid-template-columns: 190px auto 190px;
+	min-height: 860px;
+	background: #edf6f9;
+	background-color: #ffddd2;
+}
+
+.container-left {
+	grid-column-start: 1;
+}
+
+.container-middle {
+	grid-column-start: 2;
+	display: grid;
+	grid-template-rows: 60px auto;
+	background-color: #ffddd2;
+}
+
+.campus-header {
+	grid-row-start: 1;
+	text-align: center;
+	align-items: center;
+	color: #8ab0ab;
+	margin-top: 5px;
+}
+
+.campus-card {
+	grid-row-start: 2;
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.campus-indivdiuals {
+	text-align: center;
+	color: whitesmoke;
+	width: 500px;
+	height: 500px;
+	border-radius: 20px;
+	background-color: #83c5be;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.campusImage {
+	margin-top: 25px;
+	width: 300px;
+	height: 300px;
+}
+
+.campusName {
+	margin-top: 10px;
+}
+
+.campusLocation {
+	margin-top: 10px;
+}
+
+.campusTotal {
+	margin-top: 10px;
+}
+
+.campusDelete {
+	margin-top: 10px;
+}
+
+.btn-campus-delete,
+.btn-campus-Add {
+	background-color: #bddbd0;
+	border: none;
+	padding: 8px;
+	border-radius: 20px;
+}
+
+.btn-campus-delete:hover,
+.btn-campus-Add:hover {
+	outline-style: none;
+	cursor: pointer;
+}
+
+.Empty-card {
+	text-align: center;
+	color: whitesmoke;
+	width: 500px;
+	height: 500px;
+	border-radius: 20px;
+	background-color: #83c5be;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn-campus {
+	margin-top: 220px;
+}
+
+.container-right {
+	grid-column-start: 3;
+}
