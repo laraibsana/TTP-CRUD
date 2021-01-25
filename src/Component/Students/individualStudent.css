@@ -1,0 +1,33 @@
+.individualStudent-Container {
+	display: grid;
+	grid-template-columns: 190px auto 190px;
+	min-height: 860px;
+	background: #edf6f9;
+	background-color: #ffddd2;
+}
+
+.individualStudent-Container-left {
+	grid-column-start: 1;
+}
+
+.individualStudent-Container-middle {
+	grid-column-start: 2;
+	display: grid;
+	grid-template-rows: 500px auto;
+	background-color: #ffddd2;
+}
+
+.individualStudent {
+}
+
+.individualtheStudent {
+	text-align: center;
+}
+
+.indidivualthecampus {
+	text-align: center;
+}
+
+.individualStudent-Container-right {
+	grid-column-start: 3;
+}

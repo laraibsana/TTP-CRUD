@@ -23,7 +23,7 @@ export const updatStudentDataAction = (payload) => {
 
 export const creatStudentDataAction = (payload) => {
 	return {
-		type: "CREATES_STUDENT_DATA",
+		type: "CREATE_STUDENT_DATA",
 		payload,
 	};
 };

@@ -28,10 +28,18 @@ export const createCampusDataAction = (payload) => {
 	};
 };
 
+export const getSingleCampus = (payload, payload1) => {
+	return {
+		type: "GET_SINGLE_DATA",
+		payload,
+		payload1,
+	};
+};
+
 export const getCampusData = () => {
 	return async (dispatch) => {
 		try {
-			const response = await axios.get("http://localhost:5000/school/campus");
+			const response = await axios.get("http://localhost:5000/campus");
 			dispatch(getCampusDataAction(response.data));
 		} catch (error) {
 			console.error(error);
